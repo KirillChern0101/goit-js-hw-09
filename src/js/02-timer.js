@@ -21,7 +21,9 @@ flatpickr(dateInput, {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     if (selectedDate < new Date()) {
-      Notiflix.Notify.warning('Please choose a date in the future');
+      Notiflix.Notify.warning(
+        'NO NO NO ヽ(°□° )ノ Please choose a date in the future'
+      );
       btnStart.disabled = true;
     } else {
       btnStart.disabled = false;
@@ -35,7 +37,7 @@ btnStart.addEventListener('click', () => {
     if (timeLeft <= 0) {
       clearInterval(countDownInterval);
       updateTimerDisplay(0);
-      Notiflix.Notify.success('Countdown completed!');
+      Notiflix.Notify.success('Countdown completed!(੭ˊ꒳​ˋ)੭✧');
     } else {
       updateTimerDisplay(timeLeft);
     }

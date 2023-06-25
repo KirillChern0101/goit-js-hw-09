@@ -1,3 +1,57 @@
+.goBackA {
+  font-weight: bold;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.goBackA:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+li a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+li a:hover {
+  color: #000;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+li a:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+li a:active {
+  top: 2px;
+}
+li:nth-child(1) a {
+  background-color: #ff4081;
+}
+
+li:nth-child(2) a {
+  background-color: #00bcd4;
+}
+
+li:nth-child(3) a {
+  background-color: #4caf50;
+}
+
 button {
   display: inline-block;
   padding: 10px 20px;
@@ -46,11 +100,6 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .timer {
